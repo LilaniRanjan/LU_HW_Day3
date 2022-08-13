@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Day 4 ----- Home work</title>
+        <style>
+            div{
+                background-color: blue;
+                width: 200px;
+                height: 200px;
+            }
+
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="change">
+            <img class="image" src="">
+        </div>
+        <button  onclick="changeColour()">Button 1</button>
+        <button onclick="changeSize()">Button 2</button>
+        <button onclick="addImage()">Button 3</button>
+        <button onclick="removeImage()">Button 4</button>
+
+        </br>
+        </br>
+
+        <script>
+            function changeColour(){
+                document.querySelector(".change").style.backgroundColor="red";
+            }
+
+            function changeSize(){
+                document.querySelector(".change").style.width="300px";
+                document.querySelector(".change").style.height="300px";
+            }
+
+            function addImage(){
+                document.querySelector(".image").setAttribute("src","https://lucdn.letsupgrade.net/small_logo_new_0cd08c57ce.png");
+            }
+
+            function removeImage(){
+                document.querySelector(".image").setAttribute("src","");
+            }
+        </script>
+    </body>
+</html>
